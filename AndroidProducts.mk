@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/hentai_eqs.mk
+    $(LOCAL_DIR)/aosp_eqs.mk
 
 COMMON_LUNCH_CHOICES := \
-    hentai_eqs-user \
-    hentai_eqs-userdebug \
-    hentai_eqs-eng
+    aosp_eqs-user \
+    aosp_eqs-userdebug \
+    aosp_eqs-eng
