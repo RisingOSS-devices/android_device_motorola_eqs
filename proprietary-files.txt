@@ -601,13 +601,8 @@ product/etc/permissions/privapp-permissions-com.motorola.motodisplay.xml
 
 # NFC
 vendor/bin/hw/android.hardware.nfc@1.2-service.st
-vendor/bin/hw/android.hardware.secure_element@1.2-service-gto
 vendor/bin/STFlashTool
 vendor/etc/init/android.hardware.nfc@1.2-service.st.rc
-vendor/etc/init/android.hardware.secure_element@1.2-service-gto.rc
-vendor/lib64/android.hardware.secure_element@1.0-impl-gto.so
-vendor/lib64/android.hardware.secure_element@1.1-impl-gto.so
-vendor/lib64/android.hardware.secure_element@1.2-impl-gto.so
 vendor/lib64/libstnfc-auth.so
 vendor/lib64/nfc_nci.st21nfc.st.so
 system_ext/lib64/libnfc_nci_jni.so
@@ -618,7 +613,6 @@ system_ext/lib64/libstnfc_nci_jni.so
 vendor/etc/libnfc-hal-st.conf
 vendor/etc/libnfc-hal-st54j.conf
 vendor/etc/libnfc-nci-st.conf
-vendor/etc/libse-gto-hal.conf
 vendor/etc/st21nfc_conf_ds.txt
 vendor/etc/st21nfc_conf_ss.txt
 vendor/etc/st54j_conf_ds.txt
