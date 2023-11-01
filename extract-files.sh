@@ -12,10 +12,12 @@ if [ "${BASH_SOURCE[0]}" != "${0}" ]; then
     return
 fi
 
+MY_DIR="${BASH_SOURCE%/*}"
+
 set -e
 
 export DEVICE=eqs
 export DEVICE_COMMON=sm8475-common
 export VENDOR=motorola
 
-"./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
+"${MY_DIR}/../${DEVICE_COMMON}/extract-files.sh" "$@"
