@@ -20,4 +20,4 @@ export DEVICE=eqs
 export DEVICE_COMMON=sm8475-common
 export VENDOR=motorola
 
-"${MY_DIR}/../${DEVICE_COMMON}/extract-files.sh" "$@"
+bash "${MY_DIR}/../${DEVICE_COMMON}/extract-files.sh" "$@"
