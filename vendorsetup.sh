@@ -12,18 +12,28 @@ fi
 echo eqs: start cloning device specific repos
 COMMON_DT=device/motorola/sm8475-common/sm8475.mk
 if ! [ -a $COMMON_DT ]; then git clone https://github.com/nishant6342/device_motorola_sm8475-common -b Ursamoon device/motorola/sm8475-common
+else
+cd device/motorola/sm8475-common && git reset --hard HEAD~1 && git pull;cd ../../..
 fi
 COMMON_VT=vendor/motorola/sm8475-common/sm8475-common-vendor.mk
 if ! [ -a $COMMON_VT ]; then git clone https://github.com/nishant6342/vendor_motorola_sm8475-common -b Ursamoon vendor/motorola/sm8475-common
+else
+cd vendor/motorola/sm8475-common && git reset --hard HEAD~1 && git pull;cd ../../..
 fi
 VT=vendor/motorola/eqs/eqs-vendor.mk
 if ! [ -a $VT ]; then git clone https://gitlab.com/nishant6342/vendor_motorola_eqs -b Ursamoon vendor/motorola/eqs
+else
+cd vendor/motorola/eqs && git reset --hard HEAD~1 && git pull;cd ../../..
 fi
 KT=device/motorola/eqs-kernel/kernel
 if ! [ -a $KT ]; then git clone --depth=1 https://github.com/nishant6342/device_motorola_eqs-kernel device/motorola/eqs-kernel
+else
+cd device/motorola/eqs-kernel && git reset --hard HEAD && git pull;cd ../../..
 fi
 HARDWARE_MOTO=hardware/motorola/lineage.dependencies
 if ! [ -a $HARDWARE_MOTO ]; then git clone --depth=1 https://github.com/nishant6342/hardware_motorola -b Ursamoon hardware/motorola
+else
+cd hardware/motorola && git reset --hard HEAD && git pull;cd ../..
 fi
 POCKET=packages/apps/PocketMode/pocket_mode.mk
 if ! [ -a $POCKET ]; then git clone --depth=1 https://github.com/nishant6342/packages_apps_PocketMode -b UNO packages/apps/PocketMode
