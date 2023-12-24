@@ -12,7 +12,6 @@ vendor/lib/rfsa/adsp/libVppQnnHtp.so|395642f88fc67e94f667dba3d2c150242aa4e2da
 vendor/lib/rfsa/adsp/libcalculator_skel.so|1c27f497e8e101f25988fe9342210d95ecd5d594
 vendor/lib/rfsa/adsp/libmobilenet_dsp_frc.so|7080eaa88b0eb5b40cf0fab4e41217a5c85f289d
 vendor/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so|0c5c68374cbba2fe3c1671d5f84bca94bd6616bd
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|396429c72bae75fcdf40e623d19e83b2c1e4969a
 vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so|994587bccb59fe55b70d7dc2c53f090bfd3b3576
 vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so|be83bd78e00bd3bce1a2659eea7daed649bf591e
 vendor/lib/rfsa/adsp/libvpp_ais_networks.so|351882bd70b4a0b530a80d906e53ebc14dde5f78
@@ -395,11 +394,14 @@ system_ext/lib64/libstnfc_nci_jni.so
 # NFC - configs
 vendor/etc/libnfc-hal-st.conf
 vendor/etc/libnfc-hal-st54j.conf
+vendor/etc/libnfc-hal-st54uicc.conf
 vendor/etc/libnfc-nci-st.conf
 vendor/etc/st21nfc_conf_ds.txt
 vendor/etc/st21nfc_conf_ss.txt
 vendor/etc/st54j_conf_ds.txt
 vendor/etc/st54j_conf_ss.txt
+vendor/etc/st54uicc_conf_ds.txt
+vendor/etc/st54uicc_conf_ss.txt
 
 # NFC firmware
 vendor/firmware/st21nfc_fw.bin
