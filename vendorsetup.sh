@@ -9,6 +9,10 @@ if [ -n "${CLEAN_DT_REPOS}" ]; then
         unset CLEAN_DT_REPOS
     fi
 fi
+echo eqs: Deleting and cloning qcom sepolicy for this device
+rm -rf device/qcom/sepolicy_vndr
+git clone https://github.com/Project-Elixir/device_qcom_sepolicy_vndr -b UNO device/qcom/sepolicy_vndr
+echo eqs: Done
 echo eqs: start cloning device specific repos
 COMMON_DT=device/motorola/sm8475-common/sm8475.mk
 if ! [ -a $COMMON_DT ]; then git clone https://github.com/nishant6342/device_motorola_sm8475-common -b Ursamoon device/motorola/sm8475-common
