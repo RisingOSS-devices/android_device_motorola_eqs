@@ -15,17 +15,17 @@ git clone https://github.com/Project-Elixir/device_qcom_sepolicy_vndr -b UNO dev
 echo eqs: Done
 echo eqs: start cloning device specific repos
 COMMON_DT=device/motorola/sm8475-common/sm8475.mk
-if ! [ -a $COMMON_DT ]; then git clone https://github.com/nishant6342/device_motorola_sm8475-common -b Ursamoon device/motorola/sm8475-common
+if ! [ -a $COMMON_DT ]; then git clone https://github.com/nishant6342/device_motorola_sm8475-common -b UNO device/motorola/sm8475-common
 else
 cd device/motorola/sm8475-common && git reset --hard HEAD~1 && git pull;cd ../../..
 fi
 COMMON_VT=vendor/motorola/sm8475-common/sm8475-common-vendor.mk
-if ! [ -a $COMMON_VT ]; then git clone https://github.com/nishant6342/vendor_motorola_sm8475-common -b Ursamoon vendor/motorola/sm8475-common
+if ! [ -a $COMMON_VT ]; then git clone https://github.com/nishant6342/vendor_motorola_sm8475-common -b UNO vendor/motorola/sm8475-common
 else
 cd vendor/motorola/sm8475-common && git reset --hard HEAD~1 && git pull;cd ../../..
 fi
 VT=vendor/motorola/eqs/eqs-vendor.mk
-if ! [ -a $VT ]; then git clone https://gitlab.com/nishant6342/vendor_motorola_eqs -b Ursamoon vendor/motorola/eqs
+if ! [ -a $VT ]; then git clone https://gitlab.com/nishant6342/vendor_motorola_eqs -b UNO vendor/motorola/eqs
 else
 cd vendor/motorola/eqs && git reset --hard HEAD~1 && git pull;cd ../../..
 fi
@@ -35,7 +35,7 @@ else
 cd device/motorola/eqs-kernel && git reset --hard HEAD && git pull;cd ../../..
 fi
 HARDWARE_MOTO=hardware/motorola/lineage.dependencies
-if ! [ -a $HARDWARE_MOTO ]; then git clone --depth=1 https://github.com/nishant6342/hardware_motorola -b Ursamoon hardware/motorola
+if ! [ -a $HARDWARE_MOTO ]; then git clone --depth=1 https://github.com/nishant6342/hardware_motorola -b UNO hardware/motorola
 else
 cd hardware/motorola && git reset --hard HEAD && git pull;cd ../..
 fi
