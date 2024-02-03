@@ -548,6 +548,21 @@ vendor/etc/display/qdcm_calib_data_mipi_mot_video_dummy_qhd.json
 vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_with_DSC.json
 vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_without_DSC.json
 
+# Dolby-App
+-system/app/MotoDolbyDax3/MotoDolbyDax3.apk;OVERRIDES=MusicFX
+system/etc/sysconfig/hiddenapi-whitelist-com.motorola.dolby.dolbyui.xml
+product/etc/default-permissions/default-permissions-com.motorola.dolby.dolbyui.xml
+system/etc/permissions/com.motorola.dolby.dolbyui.dax3.features.xml
+-system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk
+system_ext/etc/permissions/com.dolby.daxservice.xml
+-system_ext/priv-app/daxService/daxService.apk
+system/etc/permissions/com.motorola.frameworks.core.addon.xml
+-system/framework/com.motorola.frameworks.core.addon.jar
+system/etc/permissions/moto-checkin.xml
+-system/framework/moto-checkin.jar
+system/etc/permissions/motoaudioeffectsdk.xml
+-system/framework/motoaudioeffectsdk.jar
+
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc
