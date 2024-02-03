@@ -9,6 +9,9 @@ if [ -n "${CLEAN_DT_REPOS}" ]; then
         unset CLEAN_DT_REPOS
     fi
 fi
+echo Pulling changes from git for device/motorola/eqs
+cd device/motorola/eqs && git reset --hard HEAD~1 && git pull;cd ../../..
+echo Done pulling changes, now proceeding to clone or pull changes of other repos
 echo eqs: start cloning device specific repos
 COMMON_DT=device/motorola/sm8475-common/sm8475.mk
 if ! [ -a $COMMON_DT ]; then git clone https://github.com/nishant6342/device_motorola_sm8475-common -b UNO device/motorola/sm8475-common
