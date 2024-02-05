@@ -333,7 +333,7 @@ vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_wit
 vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_without_DSC.json
 
 # Dolby-App
--system/app/MotoDolbyDax3/MotoDolbyDax3.apk;OVERRIDES=MusicFX
+-system/app/MotoDolbyDax3/MotoDolbyDax3.apk;OVERRIDES=MusicFX|6f8e91ad92fd31774e916d5448fb50b6462673e0
 system/etc/sysconfig/hiddenapi-whitelist-com.motorola.dolby.dolbyui.xml
 product/etc/default-permissions/default-permissions-com.motorola.dolby.dolbyui.xml
 system/etc/permissions/com.motorola.dolby.dolbyui.dax3.features.xml
