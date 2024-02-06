@@ -42,6 +42,6 @@ POCKET=packages/apps/PocketMode/pocket_mode.mk
 if ! [ -a $POCKET ]; then git clone --depth=1 https://github.com/nishant6342/packages_apps_PocketMode -b UNO packages/apps/PocketMode
 fi
 KERNEL_SOURCE=kernel/motorola/sm8475/Makefile
-if ! [ -a $KERNEL_SOURCE ]; then git clone --depth=1 https://github.com/nishant6342/android_kernel_motorola_sm8475 -b lineage-20 kernel/motorola/sm8475
+if ! [ -a $KERNEL_SOURCE ]; then git clone --depth=1 https://github.com/nishant6342/android_kernel_motorola_sm8475 -b workbranch kernel/motorola/sm8475
 fi
 echo eqs: end cloning device specific repos
