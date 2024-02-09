@@ -1,3 +1,6 @@
+if [ "$SKIP_DT_SETUP" = "True" ]; then
+    echo "Skipped proprietary files setup!"
+else
 if [ -n "${CLEAN_DT_REPOS}" ]; then
     if [ "$CLEAN_DT_REPOS" = "True" ]; then
         echo "Cleaning old repos before cloning"
@@ -49,3 +52,4 @@ KERNEL_SOURCE=kernel/motorola/sm8475/Makefile
 if ! [ -a $KERNEL_SOURCE ]; then git clone --depth=1 https://github.com/nishant6342/android_kernel_motorola_sm8475 -b workbranch kernel/motorola/sm8475
 fi
 echo eqs: end cloning device specific repos
+fi
