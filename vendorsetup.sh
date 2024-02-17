@@ -7,7 +7,6 @@ if [ -n "${CLEAN_DT_REPOS}" ]; then
         rm -rf device/motorola/sm8475-common
         rm -rf device/motorola/eqs-kernel
         rm -rf vendor/motorola
-        rm -rf packages/apps/PocketMode
         rm -rf hardware/motorola
         unset CLEAN_DT_REPOS
     fi
@@ -44,9 +43,6 @@ HARDWARE_MOTO=hardware/motorola/lineage.dependencies
 if ! [ -a $HARDWARE_MOTO ]; then git clone --depth=1 https://github.com/nishant6342/hardware_motorola -b UNO hardware/motorola
 else
 cd hardware/motorola && git reset --hard HEAD && git pull;cd ../..
-fi
-POCKET=packages/apps/PocketMode/pocket_mode.mk
-if ! [ -a $POCKET ]; then git clone --depth=1 https://github.com/nishant6342/packages_apps_PocketMode -b UNO packages/apps/PocketMode
 fi
 KERNEL_SOURCE=kernel/motorola/sm8475/Makefile
 if ! [ -a $KERNEL_SOURCE ]; then git clone --depth=1 https://github.com/nishant6342/android_kernel_motorola_sm8475 -b workbranch kernel/motorola/sm8475
