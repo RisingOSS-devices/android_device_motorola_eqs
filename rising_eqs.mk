@@ -15,36 +15,16 @@
 #
 
 # Inherit from those products. Most specific first.
-<<<<<<<< HEAD:aosp_eqs.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
-========
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
->>>>>>>> 97fdae6 (eqs: Adapt For Rising 2.0):rising_eqs.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from eqs device
 $(call inherit-product, device/motorola/eqs/device.mk)
 
-<<<<<<<< HEAD:aosp_eqs.mk
-# Inherit some common Project Elixir stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
-# Official-ify
-ELIXIR_BUILD_TYPE := OFFICIAL
-IS_PHONE := true
-CUSTOM_BUILD_TYPE := OFFICIAL
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_CALL_RECORDING := true
-TARGET_SUPPORTS_BLUR := true
-EXTRA_UDFPS_ANIMATIONS := true
-
-PRODUCT_NAME := aosp_eqs
-========
 # Inherit some common RisingOS stuff.
 $(call inherit-product, vendor/rising/config/rising.mk)
 
 PRODUCT_NAME := rising_eqs
->>>>>>>> 97fdae6 (eqs: Adapt For Rising 2.0):rising_eqs.mk
 PRODUCT_DEVICE := eqs
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
@@ -62,7 +42,7 @@ BUILD_FINGERPRINT := motorola/eqs_ge/msi:13/T1SQS33.15-11-137-10-2/71a49-f5e7b6:
 WITH_GMS := true
 # TARGET_CORE_GMS := true
 TARGET_ENABLE_BLUR := true
-TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_HAS_UDFPS := true
 TARGET_USE_GOOGLE_TELEPHONY := true
 TARGET_PREBUILT_PIXEL_LAUNCHER := false
